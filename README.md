@@ -13,6 +13,7 @@ composer require "shera/promostandards-api"
 
 Here's a basic example of how to use the client:
 
+```bash
 <?php
 $productEndPoint = "https://example.com/endpoint-url";
 $userId = "XXXX";
@@ -28,6 +29,7 @@ $extraParams = [];
 $client = new PromostandardClient($userId, $password);
 $productData = $client->getProductDataV2($productEndPoint, $productVersion, $productId, $localizationCountry, $localizationLanguage, $extraParams);
 ?>
+```
 
 Replace "XXXX" with your actual user ID, password, and product ID. Replace "https://example.com/endpoint-url" with the actual endpoint URL of the Promostandards API.
 
